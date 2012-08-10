@@ -1,0 +1,7 @@
+parameters:
+#    secciones_fase.example.class: LanguageFirst\SeccionesFaseBundle\Example
+
+services:
+#    secciones_fase.example:
+#        class: %secciones_fase.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
