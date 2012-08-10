@@ -1,0 +1,48 @@
+<?php
+// src/LanguageFirst/UsuarioBundle/Entity/Usuario.php
+namespace LanguageFirst\UsuarioBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="USUARIO")
+ */
+class Usuario
+{
+	/**  @ORM\Column(type="string", length=100, unique="TRUE")*/
+	protected $correo;
+	
+	/** @ORM\Column(type="string", length=32) */
+	protected $clave;
+	
+	/** @ORM\Column(type="string", length=100) */
+	protected $nombre;
+	
+	/** @ORM\Column(type="string", length=100) */
+	protected $apellido;
+	
+	/** @ORM\Column(type="smallint") */
+	protected $estado;
+	
+	/** @ORM\Column(type="string", length=100) */
+	protected $ciudad;
+	
+	/** @ORM\Column(type="string", length=150) */
+	protected $empresa;
+	
+	/** @ORM\Column(type="string", length=100) */
+	protected $puesto;
+	
+	/** @ORM\Column(type="string", length=20) */
+	protected $tel_personal;
+	
+	/** @ORM\Column(type="string", length=20) */
+	protected $tel_empresa;
+	
+	/** @ORM\Column(type="string", length=2) */
+	protected $confirmado;
+	
+	/** @ORM\Column(type="string", length=32) */
+	protected $uniqid;
+	
+}
