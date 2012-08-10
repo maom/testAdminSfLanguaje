@@ -1,0 +1,51 @@
+<?php
+namespace LanguageFirst\PreguntasSeccionBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * LanguageFirst\PreguntasSeccionBundle\Entity\PreguntasSeccion
+ */
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="PREGUNTAS_SECCION")
+ */
+class PreguntasSeccion
+{
+    /** @ORM\Column(type="integer", unique="TRUE") 
+     *  @ORM\GeneratedValue(strategy="AUTO")
+     * */
+    protected $clave_pregunta;
+
+    /** @ORM\Column(type="string", length=200) */
+    protected $titulo_pregunta;
+    
+    /** @ORM\Column(type="string", length=5) */
+    protected $numero_pregunta;
+    
+    /** @ORM\Column(type="string", length=2) */
+    protected $ver_num_pregunta;
+    
+    /** @ORM\Column(type="string", length=300) */
+    protected $instrucciones_pregunta;
+	
+    /**
+    * @ORM\ManyToOne(targetEntity="LanguageFirst\TestBundle\Entity\Test")
+    * @ORM\JoinColumn(name="clave_test", referencedColumnName="clave_test")
+    */
+    protected $clave_test;
+    
+    /**
+     * @ORM\ManyToOne(targetEntity="LanguageFirst\FaseTestBundle\Entity\FaseTest")
+     * @ORM\JoinColumn(name="clave_fase", referencedColumnName="clave_fase")
+     */
+    protected $clave_fase;
+    
+    /**
+     * @ORM\ManyToOne(targetEntity="LanguageFirst\SeccionesFaseBundle\Entity\SeccionesFase")
+     * @ORM\JoinColumn(name="clave_seccion", referencedColumnName="clave_seccion")
+     */
+    protected $clave_seccion;
+    
+}

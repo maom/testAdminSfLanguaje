@@ -1,3 +1,7 @@
+PreguntasSeccionBundle:
+    resource: "@PreguntasSeccionBundle/Resources/config/routing.yml"
+    prefix:   /
+
 SeccionesFaseBundle:
     resource: "@SeccionesFaseBundle/Resources/config/routing.yml"
     prefix:   /
