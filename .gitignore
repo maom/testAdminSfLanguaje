@@ -3,4 +3,5 @@
 \.project
 \.settings
 .buildpath
+\app/cache
 \.metadata/

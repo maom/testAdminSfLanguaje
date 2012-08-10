@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Usuario
 {
-	/**  @ORM\Column(type="string", length=100, unique="TRUE")*/
+	/** @ORM\Column(type="string", length=100, unique="TRUE") */
 	protected $correo;
 	
 	/** @ORM\Column(type="string", length=32) */
