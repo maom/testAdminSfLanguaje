@@ -1,3 +1,7 @@
+TotalesTestRespondidosBundle:
+    resource: "@TotalesTestRespondidosBundle/Resources/config/routing.yml"
+    prefix:   /
+
 TestRespondidosBundle:
     resource: "@TestRespondidosBundle/Resources/config/routing.yml"
     prefix:   /

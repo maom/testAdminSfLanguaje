@@ -1,0 +1,36 @@
+<?php
+
+namespace LanguageFirst\TotalesTestRespondidosBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * LanguageFirst\TestRespondidosBundle\Entity\TestRespondidos
+ */
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="TOTALES_TEST_RESPONDIDOS")
+ */
+class TotalesTestRespondidos
+{
+    /** @ORM\Column(type="integer", unique="TRUE") 
+     *  @ORM\GeneratedValue(strategy="AUTO")
+     * */
+    protected $clave_total_test;
+
+    /** @ORM\Column(type="integer") */
+    protected $valor_total_test;
+	
+    /**
+    * @ORM\ManyToOne(targetEntity="LanguageFirst\TotalesBundle\Entity\Totales")
+    * @ORM\JoinColumn(name="clave_total", referencedColumnName="clave_total")
+    */
+    protected $clave_total;
+   
+    /**
+    * @ORM\ManyToOne(targetEntity="LanguageFirst\TestRespondidosBundle\Entity\TestRespondidos")
+    * @ORM\JoinColumn(name="clave_test_respondido", referencedColumnName="clave_test_respondido")
+    */
+    protected $clave_test_respondido;
+}

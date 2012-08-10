@@ -1,0 +1,7 @@
+parameters:
+#    totales_test_respondidos.example.class: LanguageFirst\TotalesTestRespondidosBundle\Example
+
+services:
+#    totales_test_respondidos.example:
+#        class: %totales_test_respondidos.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
