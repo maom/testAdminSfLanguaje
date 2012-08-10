@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new LanguageFirst\UsuarioBundle\UsuarioBundle(),
             new LanguageFirst\TestBundle\TestBundle(),
             new LanguageFirst\TotalesBundle\TotalesBundle(),
+            new LanguageFirst\TestRespondidosBundle\TestRespondidosBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

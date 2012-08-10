@@ -20,6 +20,7 @@
       <parameter key="UsuarioBundle">LanguageFirst\UsuarioBundle\UsuarioBundle</parameter>
       <parameter key="TestBundle">LanguageFirst\TestBundle\TestBundle</parameter>
       <parameter key="TotalesBundle">LanguageFirst\TotalesBundle\TotalesBundle</parameter>
+      <parameter key="TestRespondidosBundle">LanguageFirst\TestRespondidosBundle\TestRespondidosBundle</parameter>
       <parameter key="AcmeDemoBundle">Acme\DemoBundle\AcmeDemoBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -342,6 +343,7 @@
       <parameter>UsuarioBundle</parameter>
       <parameter>TestBundle</parameter>
       <parameter>TotalesBundle</parameter>
+      <parameter>TestRespondidosBundle</parameter>
       <parameter>AcmeDemoBundle</parameter>
       <parameter>WebProfilerBundle</parameter>
       <parameter>SensioDistributionBundle</parameter>
@@ -1626,6 +1628,7 @@
               <argument key="UsuarioBundle">LanguageFirst\UsuarioBundle\Entity</argument>
               <argument key="TestBundle">LanguageFirst\TestBundle\Entity</argument>
               <argument key="TotalesBundle">LanguageFirst\TotalesBundle\Entity</argument>
+              <argument key="TestRespondidosBundle">LanguageFirst\TestRespondidosBundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -1670,6 +1673,7 @@
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/UsuarioBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TotalesBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestRespondidosBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -1687,6 +1691,7 @@
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/UsuarioBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TotalesBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestRespondidosBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -1704,10 +1709,29 @@
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/UsuarioBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TotalesBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestRespondidosBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
                   <argument>LanguageFirst\TotalesBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service">
+                        <service class="Symfony\Bridge\Doctrine\Annotations\IndexedReader" public="false">
+                          <argument type="service" id="annotation_reader"/>
+                        </service>
+                      </argument>
+                      <argument type="collection">
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/UsuarioBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TotalesBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestRespondidosBundle/Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>LanguageFirst\TestRespondidosBundle\Entity</argument>
                 </call>
               </service>
             </argument>
@@ -2071,6 +2095,33 @@
                   <argument type="service" id="templating.loader"/>
                   <argument>TotalesBundle</argument>
                   <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TotalesBundle/Resources/views</argument>
+                  <argument>/\.[^.]+\.twig$/</argument>
+                </service>
+              </argument>
+            </argument>
+          </service>
+        </argument>
+        <argument>twig</argument>
+      </call>
+      <call method="addResource">
+        <argument type="service">
+          <service class="Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource" public="false">
+            <tag name="assetic.templating.twig"/>
+            <tag name="assetic.formula_resource" loader="twig"/>
+            <argument type="collection">
+              <argument type="service">
+                <service class="%assetic.directory_resource.class%" public="false">
+                  <argument type="service" id="templating.loader"/>
+                  <argument>TestRespondidosBundle</argument>
+                  <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/app/Resources/TestRespondidosBundle/views</argument>
+                  <argument>/\.[^.]+\.twig$/</argument>
+                </service>
+              </argument>
+              <argument type="service">
+                <service class="%assetic.directory_resource.class%" public="false">
+                  <argument type="service" id="templating.loader"/>
+                  <argument>TestRespondidosBundle</argument>
+                  <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestRespondidosBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>

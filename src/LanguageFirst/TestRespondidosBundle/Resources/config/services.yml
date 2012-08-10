@@ -1,0 +1,7 @@
+parameters:
+#    test_respondidos.example.class: LanguageFirst\TestRespondidosBundle\Example
+
+services:
+#    test_respondidos.example:
+#        class: %test_respondidos.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
