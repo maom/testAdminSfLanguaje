@@ -1,0 +1,7 @@
+parameters:
+#    fase_test.example.class: LanguageFirst\FaseTestBundle\Example
+
+services:
+#    fase_test.example:
+#        class: %fase_test.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

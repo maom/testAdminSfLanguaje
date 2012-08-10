@@ -1,0 +1,34 @@
+<?php
+
+namespace LanguageFirst\FaseTestBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * LanguageFirst\FaseTestBundle\Entity\FaseTest
+ */
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="FASES_TEST")
+ */
+class FaseTest
+{
+    /** @ORM\Column(type="integer", unique="TRUE") 
+     *  @ORM\GeneratedValue(strategy="AUTO")
+     * */
+    protected $clave_fase;
+
+    /** @ORM\Column(type="string", length=200) */
+    protected $titulo_fase;
+    
+    
+    /** @ORM\Column(type="string", length=300) */
+    protected $instrucciones_fase;
+	
+    /**
+    * @ORM\ManyToOne(targetEntity="LanguageFirst\TestBundle\Entity\Test")
+    * @ORM\JoinColumn(name="clave_test", referencedColumnName="clave_test")
+    */
+    protected $clave_test;
+}
