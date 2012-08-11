@@ -1,0 +1,61 @@
+<?php
+namespace LanguageFirst\RespuestasPreguntasBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * LanguageFirst\RespuestasPreguntasBundle\Entity\RespuestasPreguntas
+ */
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="RESPUESTAS_PREGUNTAS")
+ */
+class RespuestasPreguntas
+{
+    /** @ORM\Column(type="integer", unique="TRUE") 
+     *  @ORM\GeneratedValue(strategy="AUTO")
+     * */
+    protected $clave_respuesta;
+
+    /** @ORM\Column(type="text") */
+    protected $titulo_respuesta;
+    
+    /** @ORM\Column(type="string", length=5) */
+    protected $numero_respuesta; 
+    
+    /** @ORM\Column(type="string", length=2) */
+    protected $ver_num_respuesta;
+    
+    /** @ORM\Column(type="string", length=300) */
+    protected $instrucciones_respuesta;
+	
+    /** @ORM\Column(type="string", length=2) */
+    protected $tipo_campo;
+    
+    /** @ORM\Column(type="integer") */
+    protected $largo_campo;
+    
+    /** @ORM\Column(type="integer") */
+    protected $alto_campo;
+    
+     /** @ORM\Column(type="string", length=2) */
+    protected $forzoso;
+
+    /**
+    * @ORM\ManyToOne(targetEntity="LanguageFirst\PreguntasSeccionBundle\Entity\PreguntasSeccion")
+    * @ORM\JoinColumn(name="clave_pregunta", referencedColumnName="clave_pregunta")
+    */
+    protected $clave_pregunta;
+    
+    /**
+     * @ORM\ManyToOne(targetEntity="LanguageFirst\FaseTestBundle\Entity\FaseTest")
+     * @ORM\JoinColumn(name="clave_fase", referencedColumnName="clave_fase")
+     */
+    protected $clave_fase;
+    
+    /** @ORM\Column(type="string", length=255) */
+    protected $categoria_respuesta;
+    
+    
+}
