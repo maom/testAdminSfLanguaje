@@ -27,6 +27,8 @@ class AppKernel extends Kernel
             new LanguageFirst\PreguntasSeccionBundle\PreguntasSeccionBundle(),
             new LanguageFirst\RespuestasPreguntasBundle\RespuestasPreguntasBundle(),
             new LanguageFirst\OpcionesRespuestasBundle\OpcionesRespuestasBundle(),
+            new LanguageFirst\RespuestasUsuariosBundle\RespuestasUsuariosBundle(),
+            new LanguageFirst\AdminBundle\AdminBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

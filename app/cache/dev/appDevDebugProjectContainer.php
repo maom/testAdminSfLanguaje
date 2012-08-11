@@ -91,6 +91,8 @@ class appDevDebugProjectContainer extends Container
         $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource(array(0 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'PreguntasSeccionBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/app/Resources/PreguntasSeccionBundle/views', '/\\.[^.]+\\.twig$/'), 1 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'PreguntasSeccionBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/PreguntasSeccionBundle/Resources/views', '/\\.[^.]+\\.twig$/'))), 'twig');
         $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource(array(0 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'RespuestasPreguntasBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/app/Resources/RespuestasPreguntasBundle/views', '/\\.[^.]+\\.twig$/'), 1 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'RespuestasPreguntasBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasPreguntasBundle/Resources/views', '/\\.[^.]+\\.twig$/'))), 'twig');
         $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource(array(0 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'OpcionesRespuestasBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/app/Resources/OpcionesRespuestasBundle/views', '/\\.[^.]+\\.twig$/'), 1 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'OpcionesRespuestasBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/OpcionesRespuestasBundle/Resources/views', '/\\.[^.]+\\.twig$/'))), 'twig');
+        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource(array(0 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'RespuestasUsuariosBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/app/Resources/RespuestasUsuariosBundle/views', '/\\.[^.]+\\.twig$/'), 1 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'RespuestasUsuariosBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasUsuariosBundle/Resources/views', '/\\.[^.]+\\.twig$/'))), 'twig');
+        $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource(array(0 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'AdminBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/app/Resources/AdminBundle/views', '/\\.[^.]+\\.twig$/'), 1 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'AdminBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/AdminBundle/Resources/views', '/\\.[^.]+\\.twig$/'))), 'twig');
         $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource(array(0 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'AcmeDemoBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/app/Resources/AcmeDemoBundle/views', '/\\.[^.]+\\.twig$/'), 1 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'AcmeDemoBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/Acme/DemoBundle/Resources/views', '/\\.[^.]+\\.twig$/'))), 'twig');
         $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource(array(0 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'WebProfilerBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/app/Resources/WebProfilerBundle/views', '/\\.[^.]+\\.twig$/'), 1 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'WebProfilerBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/vendor/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views', '/\\.[^.]+\\.twig$/'))), 'twig');
         $instance->addResource(new \Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource(array(0 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'SensioDistributionBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/app/Resources/SensioDistributionBundle/views', '/\\.[^.]+\\.twig$/'), 1 => new \Symfony\Bundle\AsseticBundle\Factory\Resource\DirectoryResource($a, 'SensioDistributionBundle', '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/vendor/bundles/Sensio/Bundle/DistributionBundle/Resources/views', '/\\.[^.]+\\.twig$/'))), 'twig');
@@ -248,7 +250,7 @@ class appDevDebugProjectContainer extends Container
 
         $e = new \Symfony\Bridge\Doctrine\Annotations\IndexedReader($a);
 
-        $f = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($e, array(0 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/UsuarioBundle/Entity', 1 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestBundle/Entity', 2 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TotalesBundle/Entity', 3 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestRespondidosBundle/Entity', 4 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TotalesTestRespondidosBundle/Entity', 5 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/FaseTestBundle/Entity', 6 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/SeccionesFaseBundle/Entity', 7 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/PreguntasSeccionBundle/Entity', 8 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasPreguntasBundle/Entity', 9 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/OpcionesRespuestasBundle/Entity'));
+        $f = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($e, array(0 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/UsuarioBundle/Entity', 1 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestBundle/Entity', 2 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TotalesBundle/Entity', 3 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestRespondidosBundle/Entity', 4 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TotalesTestRespondidosBundle/Entity', 5 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/FaseTestBundle/Entity', 6 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/SeccionesFaseBundle/Entity', 7 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/PreguntasSeccionBundle/Entity', 8 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasPreguntasBundle/Entity', 9 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/OpcionesRespuestasBundle/Entity', 10 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasUsuariosBundle/Entity', 11 => '/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/AdminBundle/Entity'));
 
         $g = new \Doctrine\ORM\Mapping\Driver\DriverChain();
         $g->addDriver($f, 'LanguageFirst\\UsuarioBundle\\Entity');
@@ -261,9 +263,11 @@ class appDevDebugProjectContainer extends Container
         $g->addDriver($f, 'LanguageFirst\\PreguntasSeccionBundle\\Entity');
         $g->addDriver($f, 'LanguageFirst\\RespuestasPreguntasBundle\\Entity');
         $g->addDriver($f, 'LanguageFirst\\OpcionesRespuestasBundle\\Entity');
+        $g->addDriver($f, 'LanguageFirst\\RespuestasUsuariosBundle\\Entity');
+        $g->addDriver($f, 'LanguageFirst\\AdminBundle\\Entity');
 
         $h = new \Doctrine\ORM\Configuration();
-        $h->setEntityNamespaces(array('UsuarioBundle' => 'LanguageFirst\\UsuarioBundle\\Entity', 'TestBundle' => 'LanguageFirst\\TestBundle\\Entity', 'TotalesBundle' => 'LanguageFirst\\TotalesBundle\\Entity', 'TestRespondidosBundle' => 'LanguageFirst\\TestRespondidosBundle\\Entity', 'TotalesTestRespondidosBundle' => 'LanguageFirst\\TotalesTestRespondidosBundle\\Entity', 'FaseTestBundle' => 'LanguageFirst\\FaseTestBundle\\Entity', 'SeccionesFaseBundle' => 'LanguageFirst\\SeccionesFaseBundle\\Entity', 'PreguntasSeccionBundle' => 'LanguageFirst\\PreguntasSeccionBundle\\Entity', 'RespuestasPreguntasBundle' => 'LanguageFirst\\RespuestasPreguntasBundle\\Entity', 'OpcionesRespuestasBundle' => 'LanguageFirst\\OpcionesRespuestasBundle\\Entity'));
+        $h->setEntityNamespaces(array('UsuarioBundle' => 'LanguageFirst\\UsuarioBundle\\Entity', 'TestBundle' => 'LanguageFirst\\TestBundle\\Entity', 'TotalesBundle' => 'LanguageFirst\\TotalesBundle\\Entity', 'TestRespondidosBundle' => 'LanguageFirst\\TestRespondidosBundle\\Entity', 'TotalesTestRespondidosBundle' => 'LanguageFirst\\TotalesTestRespondidosBundle\\Entity', 'FaseTestBundle' => 'LanguageFirst\\FaseTestBundle\\Entity', 'SeccionesFaseBundle' => 'LanguageFirst\\SeccionesFaseBundle\\Entity', 'PreguntasSeccionBundle' => 'LanguageFirst\\PreguntasSeccionBundle\\Entity', 'RespuestasPreguntasBundle' => 'LanguageFirst\\RespuestasPreguntasBundle\\Entity', 'OpcionesRespuestasBundle' => 'LanguageFirst\\OpcionesRespuestasBundle\\Entity', 'RespuestasUsuariosBundle' => 'LanguageFirst\\RespuestasUsuariosBundle\\Entity', 'AdminBundle' => 'LanguageFirst\\AdminBundle\\Entity'));
         $h->setMetadataCacheImpl($b);
         $h->setQueryCacheImpl($c);
         $h->setResultCacheImpl($d);
@@ -2159,6 +2163,8 @@ class appDevDebugProjectContainer extends Container
                 'PreguntasSeccionBundle' => 'LanguageFirst\\PreguntasSeccionBundle\\PreguntasSeccionBundle',
                 'RespuestasPreguntasBundle' => 'LanguageFirst\\RespuestasPreguntasBundle\\RespuestasPreguntasBundle',
                 'OpcionesRespuestasBundle' => 'LanguageFirst\\OpcionesRespuestasBundle\\OpcionesRespuestasBundle',
+                'RespuestasUsuariosBundle' => 'LanguageFirst\\RespuestasUsuariosBundle\\RespuestasUsuariosBundle',
+                'AdminBundle' => 'LanguageFirst\\AdminBundle\\AdminBundle',
                 'AcmeDemoBundle' => 'Acme\\DemoBundle\\AcmeDemoBundle',
                 'WebProfilerBundle' => 'Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle',
                 'SensioDistributionBundle' => 'Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle',
@@ -2496,10 +2502,12 @@ class appDevDebugProjectContainer extends Container
                 16 => 'PreguntasSeccionBundle',
                 17 => 'RespuestasPreguntasBundle',
                 18 => 'OpcionesRespuestasBundle',
-                19 => 'AcmeDemoBundle',
-                20 => 'WebProfilerBundle',
-                21 => 'SensioDistributionBundle',
-                22 => 'SensioGeneratorBundle',
+                19 => 'RespuestasUsuariosBundle',
+                20 => 'AdminBundle',
+                21 => 'AcmeDemoBundle',
+                22 => 'WebProfilerBundle',
+                23 => 'SensioDistributionBundle',
+                24 => 'SensioGeneratorBundle',
             ),
             'assetic.twig_extension.class' => 'Symfony\\Bundle\\AsseticBundle\\Twig\\AsseticExtension',
             'assetic.twig_formula_loader.class' => 'Assetic\\Extension\\Twig\\TwigFormulaLoader',

@@ -1,0 +1,7 @@
+parameters:
+#    respuestas_usuarios.example.class: LanguageFirst\RespuestasUsuariosBundle\Example
+
+services:
+#    respuestas_usuarios.example:
+#        class: %respuestas_usuarios.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
