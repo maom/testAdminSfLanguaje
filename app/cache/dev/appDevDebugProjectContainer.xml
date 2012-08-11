@@ -26,6 +26,7 @@
       <parameter key="SeccionesFaseBundle">LanguageFirst\SeccionesFaseBundle\SeccionesFaseBundle</parameter>
       <parameter key="PreguntasSeccionBundle">LanguageFirst\PreguntasSeccionBundle\PreguntasSeccionBundle</parameter>
       <parameter key="RespuestasPreguntasBundle">LanguageFirst\RespuestasPreguntasBundle\RespuestasPreguntasBundle</parameter>
+      <parameter key="OpcionesRespuestasBundle">LanguageFirst\OpcionesRespuestasBundle\OpcionesRespuestasBundle</parameter>
       <parameter key="AcmeDemoBundle">Acme\DemoBundle\AcmeDemoBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -354,6 +355,7 @@
       <parameter>SeccionesFaseBundle</parameter>
       <parameter>PreguntasSeccionBundle</parameter>
       <parameter>RespuestasPreguntasBundle</parameter>
+      <parameter>OpcionesRespuestasBundle</parameter>
       <parameter>AcmeDemoBundle</parameter>
       <parameter>WebProfilerBundle</parameter>
       <parameter>SensioDistributionBundle</parameter>
@@ -1644,6 +1646,7 @@
               <argument key="SeccionesFaseBundle">LanguageFirst\SeccionesFaseBundle\Entity</argument>
               <argument key="PreguntasSeccionBundle">LanguageFirst\PreguntasSeccionBundle\Entity</argument>
               <argument key="RespuestasPreguntasBundle">LanguageFirst\RespuestasPreguntasBundle\Entity</argument>
+              <argument key="OpcionesRespuestasBundle">LanguageFirst\OpcionesRespuestasBundle\Entity</argument>
             </argument>
           </call>
           <call method="setMetadataCacheImpl">
@@ -1694,6 +1697,7 @@
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/SeccionesFaseBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/PreguntasSeccionBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasPreguntasBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/OpcionesRespuestasBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -1717,6 +1721,7 @@
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/SeccionesFaseBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/PreguntasSeccionBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasPreguntasBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/OpcionesRespuestasBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -1740,6 +1745,7 @@
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/SeccionesFaseBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/PreguntasSeccionBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasPreguntasBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/OpcionesRespuestasBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -1763,6 +1769,7 @@
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/SeccionesFaseBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/PreguntasSeccionBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasPreguntasBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/OpcionesRespuestasBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -1786,6 +1793,7 @@
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/SeccionesFaseBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/PreguntasSeccionBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasPreguntasBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/OpcionesRespuestasBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -1809,6 +1817,7 @@
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/SeccionesFaseBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/PreguntasSeccionBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasPreguntasBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/OpcionesRespuestasBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -1832,6 +1841,7 @@
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/SeccionesFaseBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/PreguntasSeccionBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasPreguntasBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/OpcionesRespuestasBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -1855,6 +1865,7 @@
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/SeccionesFaseBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/PreguntasSeccionBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasPreguntasBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/OpcionesRespuestasBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -1878,10 +1889,35 @@
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/SeccionesFaseBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/PreguntasSeccionBundle/Entity</argument>
                         <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasPreguntasBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/OpcionesRespuestasBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
                   <argument>LanguageFirst\RespuestasPreguntasBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service">
+                        <service class="Symfony\Bridge\Doctrine\Annotations\IndexedReader" public="false">
+                          <argument type="service" id="annotation_reader"/>
+                        </service>
+                      </argument>
+                      <argument type="collection">
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/UsuarioBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TotalesBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TestRespondidosBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/TotalesTestRespondidosBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/FaseTestBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/SeccionesFaseBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/PreguntasSeccionBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasPreguntasBundle/Entity</argument>
+                        <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/OpcionesRespuestasBundle/Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>LanguageFirst\OpcionesRespuestasBundle\Entity</argument>
                 </call>
               </service>
             </argument>
@@ -2407,6 +2443,33 @@
                   <argument type="service" id="templating.loader"/>
                   <argument>RespuestasPreguntasBundle</argument>
                   <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/RespuestasPreguntasBundle/Resources/views</argument>
+                  <argument>/\.[^.]+\.twig$/</argument>
+                </service>
+              </argument>
+            </argument>
+          </service>
+        </argument>
+        <argument>twig</argument>
+      </call>
+      <call method="addResource">
+        <argument type="service">
+          <service class="Symfony\Bundle\AsseticBundle\Factory\Resource\CoalescingDirectoryResource" public="false">
+            <tag name="assetic.templating.twig"/>
+            <tag name="assetic.formula_resource" loader="twig"/>
+            <argument type="collection">
+              <argument type="service">
+                <service class="%assetic.directory_resource.class%" public="false">
+                  <argument type="service" id="templating.loader"/>
+                  <argument>OpcionesRespuestasBundle</argument>
+                  <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/app/Resources/OpcionesRespuestasBundle/views</argument>
+                  <argument>/\.[^.]+\.twig$/</argument>
+                </service>
+              </argument>
+              <argument type="service">
+                <service class="%assetic.directory_resource.class%" public="false">
+                  <argument type="service" id="templating.loader"/>
+                  <argument>OpcionesRespuestasBundle</argument>
+                  <argument>/Users/miguel/Sites/LanguageFirst/TEST_ADMIN_SF/src/LanguageFirst/OpcionesRespuestasBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>

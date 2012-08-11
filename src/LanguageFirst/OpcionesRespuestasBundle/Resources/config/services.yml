@@ -1,0 +1,7 @@
+parameters:
+#    opciones_respuestas.example.class: LanguageFirst\OpcionesRespuestasBundle\Example
+
+services:
+#    opciones_respuestas.example:
+#        class: %opciones_respuestas.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
